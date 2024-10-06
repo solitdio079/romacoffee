@@ -14,7 +14,7 @@ export default function AnimatedLayout({ children }) {
       animate="enter"
       exit="exit"
       variants={pageVariants}
-      transition={{ duration: 1.5, type: 'easeInOut' }}
+      transition={{ duration: 0.5, type: 'easeInOut' }}
     >
       {children}
     </motion.div>

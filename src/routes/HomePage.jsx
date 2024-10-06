@@ -1,5 +1,6 @@
 import {FaInstagram, FaFacebook, FaTiktok} from 'react-icons/fa6'
 import AnimatedLayout from '../../animation/AnimatedLayout'
+import {Link} from 'react-router-dom'
 
 export default function HomePage() {
     return (
@@ -21,7 +22,9 @@ export default function HomePage() {
                 <FaFacebook className="h-10 w-10 m-2" />
                 <FaTiktok className="h-10 w-10 m-2" />
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <Link to={'/about'} className="btn bg-[#aaa57b] text-white">
+                Hakkımızda
+              </Link>
             </div>
           </div>
         </div>
