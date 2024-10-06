@@ -46,7 +46,7 @@ export default function AboutPage() {
                 </p>
                 <div className="card-actions justify-end">
                   <Link to={'/contact'} className="btn bg-[#aaa57b] text-white">
-                    Contact us
+                    İletişime Geç
                   </Link>
                 </div>
               </div>
