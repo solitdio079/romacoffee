@@ -7,10 +7,10 @@ export default function AboutPage() {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: 'url(./logo.png)',
+            backgroundImage: 'url(./wallpaper.png)',
           }}
         >
-          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-overlay bg-opacity-80"></div>
           <div className="hero-content text-neutral-content">
             <div className="card lg:card-side shadow-xl">
               <figure className="flex ">
