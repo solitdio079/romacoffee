@@ -37,11 +37,8 @@ export default function ContactUs() {
                       </a>
                     </li>
                     <li>
-                      <a>
-                        <FaEnvelope
-                          href="mailto:romacoffeetea37@gmail.com"
-                          className="h-5 w-5"
-                        />
+                      <a href="mailto:romacoffeetea37@gmail.com">
+                        <FaEnvelope className="h-5 w-5" />
                         romacoffeetea37@gmail.com
                       </a>
                     </li>
@@ -65,7 +62,10 @@ export default function ContactUs() {
                       </Link>
                     </li>
                     <li>
-                      <a target="_blank" href="https://www.instagram.com/romacoffeetea/">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/romacoffeetea/"
+                      >
                         <FaInstagram className="h-5 w-5" />
                         Follow us on Instagram
                       </a>
