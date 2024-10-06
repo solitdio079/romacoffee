@@ -13,7 +13,7 @@ export default function AboutPage() {
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-neutral-content">
             <div className="card lg:card-side shadow-xl">
-              <figure>
+              <figure className="hidden">
                 <img className="max-w-sm" src={'./hero.jpeg'} alt="Album" />
               </figure>
               <div className="card-body">
