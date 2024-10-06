@@ -24,7 +24,7 @@ export default function AboutPage() {
                 <h2 className="card-title text-3xl text-white">
                   Bizim Hakkımızda!
                 </h2>
-                <p className="text-white text-lg leading-9">
+                <p className="text-white text-lg leading-9 text-wrap">
                   Roma Coffee & Tea olarak, kahve ve çay kültürünü yeniden
                   keşfetmek isteyen herkes için özel bir deneyim sunuyoruz.
                   Roma’nın büyülü sokaklarından esinlenerek kurduğumuz markamız,

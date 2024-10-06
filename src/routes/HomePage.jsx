@@ -14,11 +14,16 @@ export default function HomePage() {
           <div className="hero-overlay bg-opacity-80"></div>
           <div className="hero-content text-neutral-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">
+              <h1 className="mb-5 text-5xl font-bold text-white">
                 Yakında Kastamonu&apos;da!
               </h1>
-              <p className="mb-5 flex flex-row justify-center">
-                <FaInstagram className="h-10 w-10 m-2" />
+              <p className="mb-5 flex flex-row justify-center text-white">
+                <a
+                  target="_blank"
+                  href={'https://www.instagram.com/romacoffeetea/'}
+                >
+                  <FaInstagram className="h-10 w-10 m-2" />
+                </a>
                 <FaFacebook className="h-10 w-10 m-2" />
                 <FaTiktok className="h-10 w-10 m-2" />
               </p>
