@@ -13,11 +13,17 @@ export default function AboutPage() {
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-neutral-content">
             <div className="card lg:card-side shadow-xl">
-              <figure className="hidden">
-                <img className="max-w-sm" src={'./hero.jpeg'} alt="Album" />
+              <figure className="flex ">
+                <img
+                  className="max-w-sm hidden"
+                  src={'./hero.jpeg'}
+                  alt="Album"
+                />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-3xl text-white">Bizim Hakkımızda!</h2>
+                <h2 className="card-title text-3xl text-white">
+                  Bizim Hakkımızda!
+                </h2>
                 <p className="text-white text-lg leading-9">
                   Roma Coffee & Tea olarak, kahve ve çay kültürünü yeniden
                   keşfetmek isteyen herkes için özel bir deneyim sunuyoruz.
@@ -39,7 +45,9 @@ export default function AboutPage() {
                   ziyaret edin. Roma’nın ruhunu fincanınızda hissedin!
                 </p>
                 <div className="card-actions justify-end">
-                  <Link to={"/"} className="btn bg-[#aaa57b] text-white">Ana Sayfa</Link>
+                  <Link to={'/'} className="btn bg-[#aaa57b] text-white">
+                    Ana Sayfa
+                  </Link>
                 </div>
               </div>
             </div>
