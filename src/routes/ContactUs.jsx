@@ -48,13 +48,13 @@ export default function ContactUs() {
                     <li>
                       <a target="_blank" href="https://wa.me/905451751837">
                         <FaWhatsapp className="h-5 w-5" />
-                        +90 545 175 18 37
+                        +90 546 836 13 26
                       </a>
                     </li>
                     <li>
                       <a>
                         <FaPhone className="h-5 w-5" />
-                        +90 534 454 00 00
+                        +90 546 836 13 26
                       </a>
                     </li>
 
