@@ -26,7 +26,7 @@ export default function ContactUs() {
                 ></iframe>
               </figure>
               <div className="card-body text-white">
-                <h2 className="card-title text-3xl">Contact Us</h2>
+                <h2 className="card-title text-3xl">İletişim</h2>
                 <p>
                   <ul className="menu flex flex-wrap  rounded-box">
                     <li>
