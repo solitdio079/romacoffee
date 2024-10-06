@@ -16,7 +16,7 @@ export default function ContactUs() {
             <div className="card lg:card-side h-auto shadow-xl">
               <figure>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.560615442844!2d33.77188237628056!3d41.42705577129489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4084fbfc889dcb07%3A0xda9d34290d72d27c!2sLavinia%20Waffle%20%26%20Chocolate%20Kastamonu!5e0!3m2!1sen!2str!4v1728237668150!5m2!1sen!2str"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.671613094224!2d33.77280327628054!3d41.42464667129509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4084fb026acb9091%3A0xef7459c6c0f544ae!2sVali%20Ayd%C4%B1n%20Arslan%20Ortaokulu!5e0!3m2!1str!2str!4v1728242775759!5m2!1str!2str"
                   width="400"
                   height="350"
                   style={{ border: 0 }}
@@ -32,8 +32,8 @@ export default function ContactUs() {
                     <li>
                       <a>
                         <FaMapLocation className="h-5 w-5" />
-                        Kuzeykent, Yenişehir Sitesi 8 A D:1, 37150 Kastamonu
-                        Merkez/Kastamonu
+                        Kuzeykent Mahallesi, Vali Aydın Arslan Caddesi, 37150
+                        Kuzeykent/Kastamonu
                       </a>
                     </li>
                     <li>
