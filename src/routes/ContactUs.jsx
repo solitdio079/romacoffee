@@ -1,5 +1,5 @@
 import AnimatedLayout from "../../animation/AnimatedLayout";
-import { FaMapLocation, FaEnvelope, FaWhatsapp, FaPhone, FaGlobe } from 'react-icons/fa6'
+import { FaMapLocation, FaEnvelope, FaWhatsapp, FaPhone, FaGlobe, FaInstagram } from 'react-icons/fa6'
 import {Link} from 'react-router-dom'
 //import {Link} from 'react-router-dom'
 export default function ContactUs() {
@@ -39,10 +39,10 @@ export default function ContactUs() {
                     <li>
                       <a>
                         <FaEnvelope
-                          href="mailto:info@romacoffeetea.com"
+                          href="mailto:romacoffeetea37@gmail.com"
                           className="h-5 w-5"
                         />
-                        info@romacoffeetea.com
+                        romacoffeetea37@gmail.com
                       </a>
                     </li>
                     <li>
@@ -63,6 +63,12 @@ export default function ContactUs() {
                         <FaGlobe className="h-5 w-5" />
                         www.romacoffeetea.com
                       </Link>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.instagram.com/romacoffeetea/">
+                        <FaInstagram className="h-5 w-5" />
+                        Follow us on Instagram
+                      </a>
                     </li>
                   </ul>
                 </p>
