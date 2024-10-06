@@ -45,8 +45,8 @@ export default function AboutPage() {
                   ziyaret edin. Roma’nın ruhunu fincanınızda hissedin!
                 </p>
                 <div className="card-actions justify-end">
-                  <Link to={'/'} className="btn bg-[#aaa57b] text-white">
-                    Ana Sayfa
+                  <Link to={'/contact'} className="btn bg-[#aaa57b] text-white">
+                    Contact us
                   </Link>
                 </div>
               </div>

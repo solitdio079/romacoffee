@@ -5,6 +5,7 @@ import './index.css'
 import HomePage from './routes/HomePage'
 import Root from './Root'
 import AboutPage from './routes/AboutPage'
+import ContactUs from './routes/ContactUs'
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,9 @@ const router = createBrowserRouter([
     }, {
       path: "/about",
       element: <AboutPage/>
+      }, {
+      path: "/contact",
+      element: <ContactUs/>
     }]
   },
 ])
