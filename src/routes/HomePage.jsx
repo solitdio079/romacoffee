@@ -1,4 +1,4 @@
-import {FaInstagram, FaFacebook, FaTiktok} from 'react-icons/fa6'
+import {FaInstagram, FaFacebook} from 'react-icons/fa6'
 import AnimatedLayout from '../../animation/AnimatedLayout'
 import {Link} from 'react-router-dom'
 
@@ -24,8 +24,12 @@ export default function HomePage() {
                 >
                   <FaInstagram className="h-10 w-10 m-2" />
                 </a>
-                <FaFacebook className="h-10 w-10 m-2" />
-                <FaTiktok className="h-10 w-10 m-2" />
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/share/14VPJyGH6b/"
+                >
+                  <FaFacebook className="h-10 w-10 m-2" />
+                </a>
               </p>
               <Link to={'/about'} className="btn bg-[#aaa57b] text-white">
                 Hakkımızda
