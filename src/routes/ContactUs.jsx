@@ -15,15 +15,7 @@ export default function ContactUs() {
           <div className="hero-content text-neutral-content">
             <div className="card lg:card-side h-auto shadow-xl">
               <figure>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.671613094224!2d33.77280327628054!3d41.42464667129509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4084fb026acb9091%3A0xef7459c6c0f544ae!2sVali%20Ayd%C4%B1n%20Arslan%20Ortaokulu!5e0!3m2!1str!2str!4v1728242775759!5m2!1str!2str"
-                  width="400"
-                  height="350"
-                  style={{ border: 0 }}
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.573072880676!2d33.7746348!3d41.4267854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4084fb9d9bb94229%3A0xbadf45c91e458afd!2sRoma%20Coffee%20Tea!5e0!3m2!1sen!2str!4v1729418522822!5m2!1sen!2str" width="400" height="350" style={{border: 0}} allowfullscreen="" loading="lazy"x></iframe>
               </figure>
               <div className="card-body text-white">
                 <h2 className="card-title text-3xl">İletişim</h2>
