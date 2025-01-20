@@ -125,10 +125,10 @@ export default function HomePage() {
               />
               <div className="flex-col">
                 <span
-                  className="hidden lg:block"
+                  className="hidden text-lg lg:block"
                   style={{
                     color: '#fff',
-                    fontSize: '2em',
+                   
                     fontWeight: 700,
                   }}
                 >
