@@ -135,6 +135,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
             <div className="flex-col h-96 w-full lg:w-1/2">
+              <Mask mask={"url('./mask4.png')"} className="my-5"> <img src='./hero.jpeg' width={400}/> </Mask>
               <p className="text-lg mt-5 text-primary">Hoş Geldiniz</p>
               <TypeAnimation
                 sequence={[
@@ -174,7 +175,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
-              <Mask mask={"url('./mask4.png')"} className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
+              <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
                 <fetcher.Form method="post" className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
@@ -268,7 +269,7 @@ export default function HomePage() {
                     </button>
                   </div>
                 </fetcher.Form>
-              </Mask>
+              </div>
             </div>
           </div>
         </div>
