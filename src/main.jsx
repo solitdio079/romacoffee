@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './index.css'
-import HomePage from './routes/HomePage'
+import HomePage, {action as franchiseAction} from './routes/HomePage'
 import Root from './Root'
 import AboutPage from './routes/AboutPage'
 import ContactUs from './routes/ContactUs'
@@ -14,7 +14,8 @@ const router = createBrowserRouter([
     element: <Root/>,
     children: [{
       index: true,
-      element: <HomePage/>
+      element: <HomePage />,
+      action: franchiseAction
     }, {
       path: "/about",
       element: <AboutPage/>

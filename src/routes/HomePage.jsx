@@ -4,9 +4,42 @@ import AnimatedLayout from '../../animation/AnimatedLayout'
 import { TypeAnimation } from 'react-type-animation'
 //import { useState } from 'react'
 import { towns, districts } from './tukey'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useFetcher } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast'
+
+export async function action({ request }) {
+  const formData = await request.formData()
+
+  const bodyObject = Object.fromEntries(formData)
+  bodyObject.town = towns.filter((item) => item.id === bodyObject.town).name
+
+  try {
+    const req = await fetch('http://localhost:3000/franchise', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(bodyObject)
+    })
+
+    const response = await req.json()
+    return response
+  } catch (error) {
+    return {error: error.message}
+  }
+}
+
 export default function HomePage() {
-    const [selectedTown, setSelectedTown] = useState('37')
+  const [selectedTown, setSelectedTown] = useState('37')
+  const fetcher = useFetcher()
+
+  useEffect(() => {
+    const toastOptions = { duration: 5000 }
+    
+    fetcher.data ? fetcher.data.msg ? toast.success(fetcher.data.msg, toastOptions): toast.error(fetcher.data, toastOptions):''
+  })
     return (
       <AnimatedLayout>
         <div
@@ -141,12 +174,13 @@ export default function HomePage() {
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
               <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
-                <form className="card-body">
+                <fetcher.Form method="post" className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text text-white">Ad Soyad</span>
                     </label>
                     <input
+                      name="fullName"
                       type="text"
                       className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
                       required
@@ -157,6 +191,7 @@ export default function HomePage() {
                       <span className="label-text text-white">Email</span>
                     </label>
                     <input
+                      name="email"
                       type="email"
                       className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
                       required
@@ -168,6 +203,7 @@ export default function HomePage() {
                       <span className="label-text text-white">Telefon</span>
                     </label>
                     <input
+                      name="phone"
                       type="tel"
                       className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
                       required
@@ -178,6 +214,8 @@ export default function HomePage() {
                       <span className="label-text text-white">İl</span>
                     </label>
                     <select
+                      name="town"
+                      required
                       defaultValue={selectedTown}
                       onChange={(e) => setSelectedTown(e.target.value)}
                       className="select rounded-none border-white focus:border-white bg-transparent text-white select-bordered w-full max-w-xs"
@@ -189,12 +227,12 @@ export default function HomePage() {
                       ))}
                     </select>
                   </div>
-
+                  <Toaster/>
                   <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text text-white">İlçe</span>
                     </label>
-                    <select className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs">
+                    <select name="district" required className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs">
                       {districts
                         .filter((item) => item.il_id === selectedTown)
                         .map((item) => (
@@ -210,14 +248,14 @@ export default function HomePage() {
                         Söylemek istedikleriniz
                       </span>
                     </label>
-                    <textarea className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+                    <textarea name='message' className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
                   </div>
                   <div className="form-control mt-6">
                     <button className="btn btn-primary rounded-none text-white">
-                      Login
+                      {fetcher.state ==='idle' ? 'Gönder' :<span className='loading loading-spinner text-white'></span>}
                     </button>
                   </div>
-                </form>
+                </fetcher.Form>
               </div>
             </div>
           </div>
