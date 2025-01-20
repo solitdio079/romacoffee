@@ -7,6 +7,7 @@ import { towns, districts } from './tukey'
 import { useEffect, useState } from 'react'
 import { useFetcher } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
+import Mask from '../../components/Mask'
 
 export async function action({ request }) {
   const formData = await request.formData()
@@ -173,7 +174,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
-              <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
+              <Mask mask={"url('./mask4.png')"} className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
                 <fetcher.Form method="post" className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
@@ -267,7 +268,7 @@ export default function HomePage() {
                     </button>
                   </div>
                 </fetcher.Form>
-              </div>
+              </Mask>
             </div>
           </div>
         </div>
