@@ -8,7 +8,7 @@ export default function HomePage() {
           <div
           className="flex-col min-h-screen"
           style={{
-            backgroundImage: 'url(./hero1.jpg)',
+            backgroundImage: 'url(./hero2.jpg)',
             backgroundSize: 'cover',
             backgroundRepeat:'no-repeat'
           }}
