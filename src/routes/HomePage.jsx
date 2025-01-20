@@ -56,7 +56,7 @@ export default function HomePage() {
             </div>
             <div className="navbar-center">
               <a className="btn btn-ghost text-xl">
-                <img src="./logo.png" width={100} />
+                <img src="./logo.png" className='w-20 lg:w-24' />
               </a>
             </div>
             <div className="navbar-end">
