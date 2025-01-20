@@ -56,7 +56,7 @@ export default function HomePage() {
             </div>
             <div className="navbar-center">
               <a className="btn btn-ghost text-xl">
-                <img src="./logo.png" className='w-16 lg:w-20' />
+                <img src="./logo.png" className="w-16 lg:w-20" />
               </a>
             </div>
             <div className="navbar-end">
@@ -98,7 +98,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
-            <div className='flex-col w-full lg:w-1/2'>
+            <div className="flex-col w-full lg:w-1/2">
               <p className="text-lg mt-5 text-primary">Hoş Geldiniz</p>
               <TypeAnimation
                 sequence={[
@@ -123,6 +123,42 @@ export default function HomePage() {
                   fontWeight: 700,
                 }}
               />
+            </div>
+            <div className="w-full lg:w-1/2">
+              <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form className="card-body">
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Email</span>
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="email"
+                      className="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Password</span>
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="password"
+                      className="input input-bordered"
+                      required
+                    />
+                    <label className="label">
+                      <a href="#" className="label-text-alt link link-hover">
+                        Forgot password?
+                      </a>
+                    </label>
+                  </div>
+                  <div className="form-control mt-6">
+                    <button className="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
