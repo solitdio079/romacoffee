@@ -8,7 +8,7 @@ export default function HomePage() {
     return (
       <AnimatedLayout>
         <div
-          className="flex-col min-h-screen"
+          className="flex-col min-h-screen font-sans"
           style={{
             backgroundImage: 'url(./hero2.jpg)',
             backgroundSize: 'cover',

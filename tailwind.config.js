@@ -5,6 +5,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Oswald', 'Open Sans'],
+      'serif':['Raleway']
+    }
   },
   plugins: [daisyui],
   daisyui: {
