@@ -12,8 +12,8 @@ export default function HomePage() {
           }}
         >
           <div className="hero-overlay bg-opacity-80"></div>
-          <div className="hero-content text-neutral-content text-center">
-            <div className="navbar bg-transparent">
+          <div className="hero-content flex-col text-neutral-content text-center">
+            <div className="navbar w-full bg-transparent">
               <div className="navbar-start">
                 <div className="dropdown">
                   <div
