@@ -119,6 +119,7 @@ export default function HomePage() {
                 color: textColor,
                 fontSize: '4em',
                 display: 'inline-block',
+                fontWeight:700
               }}
             />
           </div>
