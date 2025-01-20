@@ -97,7 +97,10 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col justify-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
+          <div
+            style={{ color: textColor }}
+            className="flex flex-col justify-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5"
+          >
             <TypeAnimation
               sequence={[
                 'Roma Coffee Tea\n', // Types 'One'
@@ -107,6 +110,7 @@ export default function HomePage() {
                 2000, // Waits 2s
                 () => setTextColor('yellow'),
                 "Roma Coffee Tea\n Kahve'nin en iyisi", // Types 'Three' without deleting 'Two'
+                () => setTextColor('darkkhaki'),
                 () => {
                   console.log('Sequence completed')
                 },
@@ -116,10 +120,10 @@ export default function HomePage() {
               repeat={Infinity}
               style={{
                 whiteSpace: 'pre-line',
-                color: textColor,
+
                 fontSize: '4em',
                 display: 'inline-block',
-                fontWeight:700
+                fontWeight: 700,
               }}
             />
           </div>
