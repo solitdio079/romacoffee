@@ -6,9 +6,11 @@ export default function HomePage() {
     return (
       <AnimatedLayout>
           <div
-          className=" flex-col min-h-screen"
+          className="flex-col min-h-screen"
           style={{
             backgroundImage: 'url(./hero1.jpg)',
+            backgroundSize: 'cover',
+            backgroundRepeat:'no-repeat'
           }}
         >
         <div className="navbar w-full bg-transparent">
