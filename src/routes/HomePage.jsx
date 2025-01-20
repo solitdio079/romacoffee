@@ -159,7 +159,7 @@ export default function HomePage() {
                     </label>
                     <select
                       defaultValue={selectedTown}
-                      onChange={(e) => setSelectedTown(e.value)}
+                      onChange={(e) => setSelectedTown(e.target.value)}
                       className="select rounded-none border-white focus:border-white bg-transparent text-white select-bordered w-full max-w-xs"
                     >
                       {towns.map((item) => (
