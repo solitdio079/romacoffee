@@ -3,8 +3,10 @@ import AnimatedLayout from '../../animation/AnimatedLayout'
 //import {Link} from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
 //import { useState } from 'react'
+import { towns, districts } from './tukey'
+import { useState } from 'react'
 export default function HomePage() {
-  
+    const [selectedTown, setSelectedTown] = useState(37)
     return (
       <AnimatedLayout>
         <div
@@ -128,7 +130,7 @@ export default function HomePage() {
                   className="hidden text-lg lg:block"
                   style={{
                     color: '#fff',
-                   
+
                     fontWeight: 700,
                   }}
                 >
@@ -150,20 +152,35 @@ export default function HomePage() {
                       required
                     />
                   </div>
+
                   <div className="form-control text-white">
                     <label className="label">
-                      <span className="label-text text-white">Password</span>
+                      <span className="label-text text-white">İl</span>
                     </label>
-                    <input
-                      type="password"
-                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                      required
-                    />
+                    <select
+                      defaultValue={selectedTown}
+                      onChange={(e) => setSelectedTown(e.value)}
+                      className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs"
+                    >
+                      {JSON.parse(towns).map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.name}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="form-control text-white">
                     <label className="label">
-                      <a href="#" className="label-text-alt link link-hover">
-                        Forgot password?
-                      </a>
+                      <span className="label-text text-white">İlçe</span>
                     </label>
+                    <select className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs">
+                      {JSON.parse(districts).filter(item => item.il_id === selectedTown).map((item) => (
+                        <option key={item.id} value={item.name}>
+                          {item.name}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                   <div className="form-control mt-6">
                     <button className="btn btn-primary rounded-none text-white">
