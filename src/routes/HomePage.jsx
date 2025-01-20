@@ -125,27 +125,25 @@ export default function HomePage() {
               />
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
-              <div className="card mx-auto bg-primary bg-opacity-5 backdrop-blur-sm w-full max-w-sm shrink-0 shadow-2xl">
+              <div className="card mx-auto bg-primary bg-opacity-20 backdrop-blur-sm w-full max-w-sm shrink-0 shadow-2xl">
                 <form className="card-body">
-                  <div className="form-control">
+                  <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text">Email</span>
                     </label>
                     <input
                       type="email"
-                     
-                      className="input input-bordered"
+                      className="input rounded-none bg-transparent border-white input-bordered"
                       required
                     />
                   </div>
-                  <div className="form-control">
+                  <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text">Password</span>
                     </label>
                     <input
                       type="password"
-                     
-                      className="input input-bordered"
+                      className="input rounded-none bg-transparent border-white input-bordered"
                       required
                     />
                     <label className="label">
