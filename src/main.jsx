@@ -6,23 +6,32 @@ import HomePage, {action as franchiseAction} from './routes/HomePage'
 import Root from './Root'
 import AboutPage from './routes/AboutPage'
 import ContactUs from './routes/ContactUs'
+import ErrorPage from './error-page'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root/>,
-    children: [{
-      index: true,
-      element: <HomePage />,
-      action: franchiseAction
-    }, {
-      path: "/about",
-      element: <AboutPage/>
-      }, {
-      path: "/contact",
-      element: <ContactUs/>
-    }]
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+        action: franchiseAction,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: '/about',
+        element: <AboutPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: '/contact',
+        element: <ContactUs />,
+        errorElement: <ErrorPage />,
+      },
+    ],
   },
 ])
 
