@@ -129,7 +129,7 @@ export default function HomePage() {
                 <form className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
-                      <span className="label-text">Email</span>
+                      <span className="label-text text-white">Email</span>
                     </label>
                     <input
                       type="email"
@@ -139,7 +139,7 @@ export default function HomePage() {
                   </div>
                   <div className="form-control text-white">
                     <label className="label">
-                      <span className="label-text">Password</span>
+                      <span className="label-text text-white">Password</span>
                     </label>
                     <input
                       type="password"
@@ -153,7 +153,9 @@ export default function HomePage() {
                     </label>
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn btn-primary rounded-none text-white">Login</button>
+                    <button className="btn btn-primary rounded-none text-white">
+                      Login
+                    </button>
                   </div>
                 </form>
               </div>
