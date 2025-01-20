@@ -125,7 +125,7 @@ export default function HomePage() {
               />
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
-              <div className="card mx-auto bg-primary bg-opacity-20 backdrop-blur-sm w-full max-w-sm shrink-0 shadow-2xl">
+              <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
                 <form className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
@@ -153,7 +153,7 @@ export default function HomePage() {
                     </label>
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn btn-primary">Login</button>
+                    <button className="btn btn-primary rounded-none text-white">Login</button>
                   </div>
                 </form>
               </div>
