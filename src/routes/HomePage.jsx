@@ -124,7 +124,7 @@ export default function HomePage() {
                 }}
               />
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className="w-full flex-col items-center justify-center max-h-fit lg:w-1/2">
               <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form className="card-body">
                   <div className="form-control">
