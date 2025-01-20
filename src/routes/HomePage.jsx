@@ -103,14 +103,12 @@ export default function HomePage() {
           >
             <TypeAnimation
               sequence={[
-                'Roma Coffee Tea\n', // Types 'One'
+                'Roma Coffee Tea', // Types 'One'
                 1000, // Waits 1s
                 () => setTextColor('aqua'),
-                "Roma Coffee Tea\n'ye hoş geldiniz", // Deletes 'One' and types 'Two'
+                "Vivi Pro Capulus", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                 () => setTextColor('yellow'),
-                "Roma Coffee Tea\n Kahve'nin en iyisi", // Types 'Three' without deleting 'Two'
-                () => setTextColor('darkkhaki'),
                 () => {
                   console.log('Sequence completed')
                 },
