@@ -160,7 +160,7 @@ export default function HomePage() {
                     <select
                       defaultValue={selectedTown}
                       onChange={(e) => setSelectedTown(e.value)}
-                      className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs"
+                      className="select rounded-none border-white focus:border-white bg-transparent text-white select-bordered w-full max-w-xs"
                     >
                       {towns.map((item) => (
                         <option key={item.id} value={item.id}>
@@ -174,12 +174,14 @@ export default function HomePage() {
                     <label className="label">
                       <span className="label-text text-white">İlçe</span>
                     </label>
-                    <select className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs">
-                      {districts.filter(item => item.il_id === selectedTown).map((item) => (
-                        <option key={item.id} value={item.name}>
-                          {item.name}
-                        </option>
-                      ))}
+                    <select className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs">
+                      {districts
+                        .filter((item) => item.il_id === selectedTown)
+                        .map((item) => (
+                          <option key={item.id} value={item.name}>
+                            {item.name}
+                          </option>
+                        ))}
                     </select>
                   </div>
                   <div className="form-control mt-6">
