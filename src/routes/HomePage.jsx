@@ -125,6 +125,14 @@ export default function HomePage() {
               />
               <div className="flex-col">
                 <span className="text-4xl">🍂🧸🥐☕🍪</span>
+                <span className='hidden lg:block'
+                  style={{
+                    
+                    color: '#fff',
+                    fontSize: '4em',
+                    fontWeight: 700,
+                  }}
+                >#Coffee #Kastamonu #Fun</span>
               </div>
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
