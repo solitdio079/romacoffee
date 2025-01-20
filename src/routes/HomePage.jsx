@@ -8,7 +8,7 @@ export default function HomePage() {
           <div
           className=" flex-col min-h-screen"
           style={{
-            backgroundImage: 'url(./wallpaper.png)',
+            backgroundImage: 'url(./hero1.jpg)',
           }}
         >
         <div className="navbar w-full bg-transparent">
