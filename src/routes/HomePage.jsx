@@ -144,6 +144,16 @@ export default function HomePage() {
                 <form className="card-body">
                   <div className="form-control text-white">
                     <label className="label">
+                      <span className="label-text text-white">Ad Soyad</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
+                      required
+                    />
+                  </div>
+                  <div className="form-control text-white">
+                    <label className="label">
                       <span className="label-text text-white">Email</span>
                     </label>
                     <input
@@ -153,6 +163,16 @@ export default function HomePage() {
                     />
                   </div>
 
+                  <div className="form-control text-white">
+                    <label className="label">
+                      <span className="label-text text-white">Telefon</span>
+                    </label>
+                    <input
+                      type="tel"
+                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
+                      required
+                    />
+                  </div>
                   <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text text-white">İl</span>
@@ -183,6 +203,14 @@ export default function HomePage() {
                           </option>
                         ))}
                     </select>
+                  </div>
+                  <div className="form-control text-white">
+                    <label className="label">
+                      <span className="label-text text-white">
+                        Söylemek istedikleriniz
+                      </span>
+                    </label>
+                    <textarea className="textarea rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
                   </div>
                   <div className="form-control mt-6">
                     <button className="btn btn-primary rounded-none text-white">
