@@ -108,7 +108,7 @@ export default function HomePage() {
                 '\nRoma Coffee Tea', // Types 'One'
                 1000, // Waits 1s
                
-                '\nVivi Pro Capulus', // Deletes 'One' and types 'Two'
+                '\nVivo Pro Capulus', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                
 
