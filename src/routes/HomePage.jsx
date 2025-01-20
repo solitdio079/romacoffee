@@ -2,7 +2,9 @@
 import AnimatedLayout from '../../animation/AnimatedLayout'
 //import {Link} from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
+import { useState } from 'react'
 export default function HomePage() {
+  const [textColor, setTextColor] = useState('red')
     return (
       <AnimatedLayout>
         <div
@@ -98,10 +100,12 @@ export default function HomePage() {
           <div className="flex flex-col justify-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
             <TypeAnimation
               sequence={[
-                "Roma Coffee Tea", // Types 'One'
+                'Roma Coffee Tea', // Types 'One'
                 1000, // Waits 1s
+                () => setTextColor('aqua'),
                 "Roma Coffee Tea'ye hoş geldiniz", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
+                () => setTextColor('yellow'),
                 "Roma Coffee Tea Kahve'nin en iyisi", // Types 'Three' without deleting 'Two'
                 () => {
                   console.log('Sequence completed')
@@ -111,7 +115,7 @@ export default function HomePage() {
               cursor={true}
               repeat={Infinity}
               style={{
-                color: '#fff',
+                color: textColor,
                 fontSize: '4em',
                 display: 'inline-block',
               }}
