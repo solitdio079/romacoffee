@@ -132,7 +132,7 @@ export default function HomePage() {
                     fontWeight: 700,
                   }}
                 >
-                  #Coffee #Kastamonu #Fun
+                  #coffee #kastamonu #fun
                 </span>
                 <span className="text-4xl">🍂🧸🥐☕🍪</span>
               </div>
