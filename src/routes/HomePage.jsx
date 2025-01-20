@@ -1,7 +1,7 @@
 //import {FaInstagram, FaFacebook} from 'react-icons/fa6'
 import AnimatedLayout from '../../animation/AnimatedLayout'
 //import {Link} from 'react-router-dom'
-
+import { TypeAnimation } from 'react-type-animation'
 export default function HomePage() {
     return (
       <AnimatedLayout>
@@ -94,6 +94,24 @@ export default function HomePage() {
                 </div>
               </button>
             </div>
+          </div>
+          <div className="flex flex-col lg:flex-row">
+            <TypeAnimation
+              sequence={[
+                'One', // Types 'One'
+                1000, // Waits 1s
+                'Two', // Deletes 'One' and types 'Two'
+                2000, // Waits 2s
+                'Two Three', // Types 'Three' without deleting 'Two'
+                () => {
+                  console.log('Sequence completed')
+                },
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: '4em', display: 'inline-block' }}
+            />
           </div>
         </div>
       </AnimatedLayout>
