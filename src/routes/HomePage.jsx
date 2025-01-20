@@ -101,14 +101,14 @@ export default function HomePage() {
             
             className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5"
           >
-            <p className='text-lg mt-5 text-primary'>Hoş Geldiniz</p><br/>
+            <p className='text-lg mt-5 text-primary'>Hoş Geldiniz</p>
             <TypeAnimation
               sequence={[
                
-                'Roma Coffee Tea', // Types 'One'
+                '\nRoma Coffee Tea', // Types 'One'
                 1000, // Waits 1s
                
-                'Vivi Pro Capulus', // Deletes 'One' and types 'Two'
+                '\nVivi Pro Capulus', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                
 
