@@ -95,14 +95,14 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col justify-center lg:justify-start items-center text-white lg:flex-row my-5">
+          <div className="flex flex-col justify-center lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
             <TypeAnimation
               sequence={[
-                'One', // Types 'One'
+                "Roma Coffee Tea'ye", // Types 'One'
                 1000, // Waits 1s
-                'Two', // Deletes 'One' and types 'Two'
+                'hoş geldiniz', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
-                'Two Three', // Types 'Three' without deleting 'Two'
+                "Kahve'nin en iyisi", // Types 'Three' without deleting 'Two'
                 () => {
                   console.log('Sequence completed')
                 },
