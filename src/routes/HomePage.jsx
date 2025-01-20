@@ -15,13 +15,13 @@ export async function action({ request }) {
   bodyObject.town = towns.filter((item) => item.id === bodyObject.town)[0].name
 
   try {
-    const req = await fetch('http://localhost:3000/franchise', {
+    const req = await fetch('https://romacoffeeserver.onrender.com/franchise', {
       method: 'POST',
       mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(bodyObject)
+      body: JSON.stringify(bodyObject),
     })
 
     const response = await req.json()
@@ -50,7 +50,6 @@ export default function HomePage() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <Toaster />
           <div className="navbar w-full bg-transparent text-white  backdrop-blur-lg">
             <div className="navbar-start">
               <div className="dropdown">
@@ -198,7 +197,7 @@ export default function HomePage() {
                       required
                     />
                   </div>
-
+                  <Toaster />
                   <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text text-white">Telefon</span>
