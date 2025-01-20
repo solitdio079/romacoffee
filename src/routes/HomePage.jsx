@@ -12,7 +12,7 @@ export async function action({ request }) {
   const formData = await request.formData()
 
   const bodyObject = Object.fromEntries(formData)
-  bodyObject.town = towns.filter((item) => item.id === bodyObject.town).name
+  bodyObject.town = towns.filter((item) => item.id === bodyObject.town)[0].name
 
   try {
     const req = await fetch('http://localhost:3000/franchise', {
