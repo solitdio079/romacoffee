@@ -123,6 +123,11 @@ export default function HomePage() {
                   fontWeight: 700,
                 }}
               />
+              <div className="flex-col">
+                <span className="text-3xl">☕</span>
+                <span className="text-3xl">☕</span>
+                <span className="text-3xl">☕</span>
+              </div>
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
               <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
