@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { towns, districts } from './tukey'
 import { useState } from 'react'
 export default function HomePage() {
-    const [selectedTown, setSelectedTown] = useState(37)
+    const [selectedTown, setSelectedTown] = useState('37')
     return (
       <AnimatedLayout>
         <div
@@ -162,7 +162,7 @@ export default function HomePage() {
                       onChange={(e) => setSelectedTown(e.value)}
                       className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs"
                     >
-                      {JSON.parse(towns).map((item) => (
+                      {towns.map((item) => (
                         <option key={item.id} value={item.id}>
                           {item.name}
                         </option>
@@ -175,7 +175,7 @@ export default function HomePage() {
                       <span className="label-text text-white">İlçe</span>
                     </label>
                     <select className="select rounded-none border-white focus:border-white select-bordered w-full max-w-xs">
-                      {JSON.parse(districts).filter(item => item.il_id === selectedTown).map((item) => (
+                      {districts.filter(item => item.il_id === selectedTown).map((item) => (
                         <option key={item.id} value={item.name}>
                           {item.name}
                         </option>
