@@ -128,7 +128,7 @@ export default function HomePage() {
                   className="hidden lg:block"
                   style={{
                     color: '#fff',
-                    fontSize: '3em',
+                    fontSize: '2em',
                     fontWeight: 700,
                   }}
                 >
