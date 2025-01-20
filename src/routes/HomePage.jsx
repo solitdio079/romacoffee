@@ -98,7 +98,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
-            <div className="flex-col w-full lg:w-1/2">
+            <div className="flex-col h-1/2 lg:h-full w-full lg:w-1/2">
               <p className="text-lg mt-5 text-primary">Hoş Geldiniz</p>
               <TypeAnimation
                 sequence={[
@@ -124,8 +124,8 @@ export default function HomePage() {
                 }}
               />
             </div>
-            <div className="w-full flex-col items-center justify-center max-h-fit lg:w-1/2">
-              <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
+              <div className="card mx-auto bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form className="card-body">
                   <div className="form-control">
                     <label className="label">
