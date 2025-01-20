@@ -124,7 +124,7 @@ export default function HomePage() {
                 }}
               />
               <div className="flex-col">
-                <span className="text-6xl">🐻☕🧋🍪</span>
+                <span className="text-5xl">🐻☕🧋🍪</span>
                 
               </div>
             </div>
