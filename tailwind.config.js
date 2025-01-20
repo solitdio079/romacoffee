@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'sans': ['Oswald', 'Open Sans'],
-      'serif':['Raleway']
-    }
+      sans: ['Merriweather', 'Oswald', 'Open Sans'],
+      serif: ['Raleway', 'Merriweather'],
+    },
   },
   plugins: [daisyui],
   daisyui: {
