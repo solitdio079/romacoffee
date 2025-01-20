@@ -210,7 +210,7 @@ export default function HomePage() {
                         Söylemek istedikleriniz
                       </span>
                     </label>
-                    <textarea className="textarea rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+                    <textarea className="textarea border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
                   </div>
                   <div className="form-control mt-6">
                     <button className="btn btn-primary rounded-none text-white">
