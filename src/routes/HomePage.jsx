@@ -98,7 +98,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
-            <div className='flex-col'>
+            <div className='flex-col w-full lg:w-1/2'>
               <p className="text-lg mt-5 text-primary">Hoş Geldiniz</p>
               <TypeAnimation
                 sequence={[
