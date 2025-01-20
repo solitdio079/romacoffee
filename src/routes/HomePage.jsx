@@ -95,7 +95,7 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col justify-center lg:justify-start items-center text-white lg:flex-row my-5">
             <TypeAnimation
               sequence={[
                 'One', // Types 'One'
@@ -110,7 +110,7 @@ export default function HomePage() {
               wrapper="span"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: '4em', display: 'inline-block' }}
+              style={{color:'#fff', fontSize: '4em', display: 'inline-block' }}
             />
           </div>
         </div>
