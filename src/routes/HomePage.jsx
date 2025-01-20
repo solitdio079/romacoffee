@@ -169,7 +169,7 @@ export default function HomePage() {
                 >
                   #coffee #kastamonu #fun
                 </span>
-                <span className="text-4xl">🍂🧸🥐☕🍪</span>
+                <span className="text-4xl">🏛️🧸🥐☕🍪</span>
               </div>
             </div>
             <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
