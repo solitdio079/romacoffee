@@ -50,6 +50,7 @@ export default function HomePage() {
             backgroundRepeat: 'no-repeat',
           }}
         >
+          <Toaster />
           <div className="navbar w-full bg-transparent text-white  backdrop-blur-lg">
             <div className="navbar-start">
               <div className="dropdown">
@@ -227,12 +228,16 @@ export default function HomePage() {
                       ))}
                     </select>
                   </div>
-                  <Toaster/>
+
                   <div className="form-control text-white">
                     <label className="label">
                       <span className="label-text text-white">İlçe</span>
                     </label>
-                    <select name="district" required className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs">
+                    <select
+                      name="district"
+                      required
+                      className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs"
+                    >
                       {districts
                         .filter((item) => item.il_id === selectedTown)
                         .map((item) => (
@@ -248,11 +253,18 @@ export default function HomePage() {
                         Söylemek istedikleriniz
                       </span>
                     </label>
-                    <textarea name='message' className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+                    <textarea
+                      name="message"
+                      className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"
+                    ></textarea>
                   </div>
                   <div className="form-control mt-6">
                     <button className="btn btn-primary rounded-none text-white">
-                      {fetcher.state ==='idle' ? 'Gönder' :<span className='loading loading-spinner text-white'></span>}
+                      {fetcher.state === 'idle' ? (
+                        'Gönder'
+                      ) : (
+                        <span className="loading loading-spinner text-white"></span>
+                      )}
                     </button>
                   </div>
                 </fetcher.Form>
