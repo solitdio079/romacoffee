@@ -99,7 +99,7 @@ export default function HomePage() {
           </div>
           <div
             style={{ color: textColor }}
-            className="flex flex-col justify-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5"
+            className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5"
           >
             <TypeAnimation
               sequence={[
