@@ -133,7 +133,7 @@ export default function HomePage() {
                     </label>
                     <input
                       type="email"
-                      className="input rounded-none bg-transparent border-white input-bordered"
+                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
                       required
                     />
                   </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
                     </label>
                     <input
                       type="password"
-                      className="input rounded-none bg-transparent border-white input-bordered"
+                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
                       required
                     />
                     <label className="label">
