@@ -103,12 +103,12 @@ export default function HomePage() {
           >
             <TypeAnimation
               sequence={[
-                "Hoş Geldiniz\n", // Types 'Three' without deleting 'Two'
+                'Hoş Geldiniz\n', // Types 'Three' without deleting 'Two'
                 () => setTextColor('darkkhaki'),
-                'Roma Coffee Tea', // Types 'One'
+                'Hoş Geldiniz\nRoma Coffee Tea', // Types 'One'
                 1000, // Waits 1s
                 () => setTextColor('aqua'),
-                'Vivi Pro Capulus', // Deletes 'One' and types 'Two'
+                'Hoş Geldiniz\nVivi Pro Capulus', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                 () => setTextColor('yellow'),
 
