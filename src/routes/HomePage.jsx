@@ -50,7 +50,7 @@ export default function HomePage() {
         <div
           className="flex-col min-h-screen font-sans"
           style={{
-            backgroundImage: 'url(./hero2.jpg)',
+            backgroundImage: 'url(./hero1.jpg)',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
@@ -276,7 +276,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <h2 className="text-xl">Galerimiz</h2>
           <MasonryPhotoAlbum photos={images} />
         </div>
