@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import { useFetcher } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 //import Mask from '../../components/Mask'
-import { RowsPhotoAlbum } from 'react-photo-album'
+import { MasonryPhotoAlbum } from 'react-photo-album'
 import 'react-photo-album/masonry.css'
 import { images } from '../../utils/images'
 
@@ -277,8 +277,8 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col">
-          <h2 className='text-xl'>Galerimiz</h2>
-          <RowsPhotoAlbum photos={images} />
+          <h2 className="text-xl">Galerimiz</h2>
+          <MasonryPhotoAlbum photos={images} />
         </div>
       </AnimatedLayout>
     )
