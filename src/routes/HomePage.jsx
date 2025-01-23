@@ -48,7 +48,7 @@ export default function HomePage() {
     return (
       <AnimatedLayout>
         <div
-          className="flex-col min-h-screen font-sans"
+          className="flex-col min-h-96 font-sans"
           style={{
             backgroundImage: 'url(./hero1.jpg)',
             backgroundSize: 'cover',
@@ -179,10 +179,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <div className="flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center">
+          <div className="flex-col w-full items-center justify-center">
             <h2 className="text-xl mt-10 mb-5">Galerimiz</h2>
-            <MasonryPhotoAlbum className="w-full" photos={images} />
+            <MasonryPhotoAlbum photos={images} />
           </div>
 
           <div
