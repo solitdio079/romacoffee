@@ -186,11 +186,7 @@ export default function HomePage() {
           </div>
 
           <div
-            style={{
-              backgroundImage: 'url(./hero1.jpg)',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}
+           
             className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2"
           >
             <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl"></div>
