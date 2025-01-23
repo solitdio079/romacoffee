@@ -8,6 +8,10 @@ import { useEffect, useState } from 'react'
 import { useFetcher } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 //import Mask from '../../components/Mask'
+import { RowsPhotoAlbum } from 'react-photo-album'
+import 'react-photo-album/mansory.css'
+import { images } from '../../utils/images'
+
 
 export async function action({ request }) {
   const formData = await request.formData()
@@ -135,7 +139,6 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col justify-center text-center p-5 lg:p-10 lg:justify-start items-center text-white lg:flex-row my-5">
             <div className="flex-col h-96 w-full lg:w-1/2">
-             
               <p className="text-lg mt-5 text-primary">Hoş Geldiniz</p>
               <TypeAnimation
                 sequence={[
@@ -272,6 +275,10 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col">
+          <h2 className='text-xl'>Galerimiz</h2>
+          <RowsPhotoAlbum photos={images} />
         </div>
       </AnimatedLayout>
     )
