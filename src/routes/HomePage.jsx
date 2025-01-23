@@ -9,7 +9,7 @@ import { useFetcher } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 //import Mask from '../../components/Mask'
 import { RowsPhotoAlbum } from 'react-photo-album'
-import 'react-photo-album/mansory.css'
+import 'react-photo-album/masonry.css'
 import { images } from '../../utils/images'
 
 
