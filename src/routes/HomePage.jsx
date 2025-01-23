@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react'
 import { useFetcher } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 //import Mask from '../../components/Mask'
-import { MasonryPhotoAlbum } from 'react-photo-album'
-import 'react-photo-album/masonry.css'
+import { RowsPhotoAlbum } from 'react-photo-album'
+import 'react-photo-album/rows.css'
 import { images } from '../../utils/images'
 
 
@@ -182,7 +182,7 @@ export default function HomePage() {
         <div className="flex w-full flex-col items-center">
           <div className="flex-col w-full items-center justify-center">
             <h2 className="text-xl mt-10 mb-5">Galerimiz</h2>
-            <MasonryPhotoAlbum photos={images} />
+            <RowsPhotoAlbum photos={images} />
           </div>
 
           <div
