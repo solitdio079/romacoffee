@@ -180,12 +180,12 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
-          <div>
+          <div className='bg-purple-50'>
             <h2 className="text-xl mt-10 mb-5">Galerimiz</h2>
             <MasonryPhotoAlbum photos={images} />
           </div>
 
-          <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
+          <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2 bg-secondary">
             <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl"></div>
             <fetcher.Form method="post" className="card-body">
               <div className="form-control text-white">
