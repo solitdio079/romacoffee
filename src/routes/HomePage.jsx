@@ -180,10 +180,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
-          <div className="flex-col w-full items-center justify-center">
-            <h2 className="text-xl mt-10 mb-5">Galerimiz</h2>
-            <RowsPhotoAlbum photos={images} />
-          </div>
+         
+          <RowsPhotoAlbum photos={images} />
+        
 
           <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
             <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
