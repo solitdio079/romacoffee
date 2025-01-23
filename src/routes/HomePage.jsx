@@ -179,7 +179,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-col items-center">
+        <div className="flex w-full flex-col items-center p-10">
           <div className="flex-col w-full items-center justify-center">
             <h2 className="text-xl mt-10 mb-5">Galerimiz</h2>
             <RowsPhotoAlbum photos={images} />
