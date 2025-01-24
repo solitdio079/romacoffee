@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="flex w-full flex-col items-center p-10">
           <section className="bg-white py-20 dark:bg-dark">
             <div className="container">
-              <div className="break-inside-avoid gap-8 md:columns-2 lg:columns-3">
+              <div className="break-inside-avoid gap-8 columns-2 lg:columns-3">
                 {images.map((item) => (
                   <div key={item.src} className="mb-8 overflow-hidden rounded-xl">
                     <img
