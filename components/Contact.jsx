@@ -1,6 +1,6 @@
 import { useFetcher } from "react-router-dom"
 import { useState } from "react"
-import { towns, districts } from './tukey'
+import { towns, districts } from '../src/routes/tukey'
 import { Toaster } from 'react-hot-toast'
 export default function Contact() {
     const fetcher = useFetcher()
