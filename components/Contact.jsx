@@ -1,10 +1,10 @@
-import { useFetcher } from "react-router-dom"
-import { useState } from "react"
-import { towns, districts } from '../src/routes/tukey'
-import { Toaster } from 'react-hot-toast'
+// import { useFetcher } from "react-router-dom"
+// import { useState } from "react"
+// import { towns, districts } from '../src/routes/tukey'
+// import { Toaster } from 'react-hot-toast'
 export default function Contact() {
-    const fetcher = useFetcher()
-    const [selectedTown, setSelectedTown] = useState('37')
+    //const fetcher = useFetcher()
+    //const [selectedTown, setSelectedTown] = useState('37')
     return (
       <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
         <div className="container mx-auto">
@@ -116,101 +116,7 @@ export default function Contact() {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12 dark:bg-dark-2">
-                <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
-                  <fetcher.Form method="post" className="card-body">
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">Ad Soyad</span>
-                      </label>
-                      <input
-                        name="fullName"
-                        type="text"
-                        className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                        required
-                      />
-                    </div>
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">Email</span>
-                      </label>
-                      <input
-                        name="email"
-                        type="email"
-                        className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                        required
-                      />
-                    </div>
-                    <Toaster />
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">Telefon</span>
-                      </label>
-                      <input
-                        name="phone"
-                        type="tel"
-                        className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                        required
-                      />
-                    </div>
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">İl</span>
-                      </label>
-                      <select
-                        name="town"
-                        required
-                        defaultValue={selectedTown}
-                        onChange={(e) => setSelectedTown(e.target.value)}
-                        className="select rounded-none border-white focus:border-white bg-transparent text-white select-bordered w-full max-w-xs"
-                      >
-                        {towns.map((item) => (
-                          <option key={item.id} value={item.id}>
-                            {item.name}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">İlçe</span>
-                      </label>
-                      <select
-                        name="district"
-                        required
-                        className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs"
-                      >
-                        {districts
-                          .filter((item) => item.il_id === selectedTown)
-                          .map((item) => (
-                            <option key={item.id} value={item.name}>
-                              {item.name}
-                            </option>
-                          ))}
-                      </select>
-                    </div>
-                    <div className="form-control text-white">
-                      <label className="label">
-                        <span className="label-text text-white">
-                          Söylemek istedikleriniz
-                        </span>
-                      </label>
-                      <textarea
-                        name="message"
-                        className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"
-                      ></textarea>
-                    </div>
-                    <div className="form-control mt-6">
-                      <button className="btn btn-primary rounded-none text-white">
-                        {fetcher.state === 'idle' ? (
-                          'Gönder'
-                        ) : (
-                          <span className="loading loading-spinner text-white"></span>
-                        )}
-                      </button>
-                    </div>
-                  </fetcher.Form>
-                </div>
+                
                 <div>
                   <span className="absolute -right-9 -top-10 z-[-1]">
                     <svg
