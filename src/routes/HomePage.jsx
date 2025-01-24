@@ -185,7 +185,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
-          <section className="py-20 bg-dark">
+          <section className="bg-dark">
             <div className="container">
               <span className="mb-4 block text-base font-semibold text-primary">
                 Roma Coffee Tea
