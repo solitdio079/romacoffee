@@ -3,10 +3,10 @@ import AnimatedLayout from '../../animation/AnimatedLayout'
 //import {Link} from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
 //import { useState } from 'react'
-import { towns, districts } from './tukey'
-import { useEffect, useState } from 'react'
+import { towns } from './tukey'
+import { useEffect } from 'react'
 import { useFetcher } from 'react-router-dom'
-import toast, { Toaster } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 //import Mask from '../../components/Mask'
 import 'photoswipe/dist/photoswipe.css'
 
@@ -15,6 +15,7 @@ import 'photoswipe/dist/photoswipe.css'
 //import { images } from '../../utils/images'
 
 import { images } from '../../utils/images'
+import Contact from '../../components/Contact'
 
 
 export async function action({ request }) {
@@ -41,7 +42,7 @@ export async function action({ request }) {
 }
 
 export default function HomePage() {
-  const [selectedTown, setSelectedTown] = useState('37')
+  //const [selectedTown, setSelectedTown] = useState('37')
   const fetcher = useFetcher()
 
   useEffect(() => {
@@ -181,103 +182,6 @@ export default function HomePage() {
                 <span className="text-4xl">🏛️🧸🥐☕🍪</span>
               </div>
             </div>
-            <div className="w-full hidden lg:flex flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
-              <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
-                <fetcher.Form method="post" className="card-body">
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">Ad Soyad</span>
-                    </label>
-                    <input
-                      name="fullName"
-                      type="text"
-                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                      required
-                    />
-                  </div>
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">Email</span>
-                    </label>
-                    <input
-                      name="email"
-                      type="email"
-                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                      required
-                    />
-                  </div>
-                  <Toaster />
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">Telefon</span>
-                    </label>
-                    <input
-                      name="phone"
-                      type="tel"
-                      className="input focus:border-white rounded-none bg-transparent border-white input-bordered"
-                      required
-                    />
-                  </div>
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">İl</span>
-                    </label>
-                    <select
-                      name="town"
-                      required
-                      defaultValue={selectedTown}
-                      onChange={(e) => setSelectedTown(e.target.value)}
-                      className="select rounded-none border-white focus:border-white bg-transparent text-white select-bordered w-full max-w-xs"
-                    >
-                      {towns.map((item) => (
-                        <option key={item.id} value={item.id}>
-                          {item.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">İlçe</span>
-                    </label>
-                    <select
-                      name="district"
-                      required
-                      className="select rounded-none bg-transparent text-white border-white focus:border-white select-bordered w-full max-w-xs"
-                    >
-                      {districts
-                        .filter((item) => item.il_id === selectedTown)
-                        .map((item) => (
-                          <option key={item.id} value={item.name}>
-                            {item.name}
-                          </option>
-                        ))}
-                    </select>
-                  </div>
-                  <div className="form-control text-white">
-                    <label className="label">
-                      <span className="label-text text-white">
-                        Söylemek istedikleriniz
-                      </span>
-                    </label>
-                    <textarea
-                      name="message"
-                      className="textarea focus:border-white border-white rounded-none bg-transparent text-white textarea-bordered textarea-lg w-full max-w-xs"
-                    ></textarea>
-                  </div>
-                  <div className="form-control mt-6">
-                    <button className="btn btn-primary rounded-none text-white">
-                      {fetcher.state === 'idle' ? (
-                        'Gönder'
-                      ) : (
-                        <span className="loading loading-spinner text-white"></span>
-                      )}
-                    </button>
-                  </div>
-                </fetcher.Form>
-              </div>
-            </div>
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
@@ -299,6 +203,7 @@ export default function HomePage() {
               </div>
             </div>
           </section>
+          <Contact/>
         </div>
       </AnimatedLayout>
     )
