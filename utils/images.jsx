@@ -4,7 +4,7 @@
 export const images = [
   {
     src: './gallery1.jpg',
-    asset:'./gallery.jpg',
+    asset:'./gallery1.jpg',
     width: 500,
     height: 800,
   },
