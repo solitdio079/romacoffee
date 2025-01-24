@@ -185,8 +185,19 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
-          <section className="bg-white py-20 dark:bg-dark">
+          <section className="py-20 bg-dark">
             <div className="container">
+              <span className="mb-4 block text-base font-semibold text-primary">
+                Roma Coffee Tea
+              </span>
+              <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px] dark:text-white">
+                Galerimiz
+              </h2>
+              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                adiqua minim veniam quis nostrud exercitation ullamco
+              </p>
               <div className="break-inside-avoid gap-8 columns-2 lg:columns-3">
                 {images.map((item) => (
                   <div
@@ -203,7 +214,7 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-          <Contact/>
+          <Contact />
         </div>
       </AnimatedLayout>
     )
