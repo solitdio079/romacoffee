@@ -14,7 +14,7 @@ import 'photoswipe/dist/photoswipe.css'
 
 //import { images } from '../../utils/images'
 
-//import { images } from '../../utils/images'
+import { images } from '../../utils/images'
 
 
 export async function action({ request }) {
@@ -187,69 +187,15 @@ export default function HomePage() {
           <section className="bg-white py-20 dark:bg-dark">
             <div className="container">
               <div className="break-inside-avoid gap-8 md:columns-2 lg:columns-3">
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-1.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-4.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-7.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-2.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-5.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-8.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-3.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-6.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mb-8 overflow-hidden rounded-xl">
-                  <img
-                    src="../images/galleries/gallery-04/image-9.jpg"
-                    alt="gallery image"
-                    className="w-full object-cover object-center"
-                  />
-                </div>
+                {images.map((item) => (
+                  <div key={item.src} className="mb-8 overflow-hidden rounded-xl">
+                    <img
+                      src={item.src}
+                      alt="gallery image"
+                      className="w-full object-cover object-center"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </section>
