@@ -11,7 +11,6 @@ import toast, { Toaster } from 'react-hot-toast'
 import { MasonryPhotoAlbum} from 'react-photo-album'
 import 'react-photo-album/masonry.css'
 //import { images } from '../../utils/images'
-import 'react-image-lightbox/style.css'
 import { images } from '../../utils/images'
 
 
