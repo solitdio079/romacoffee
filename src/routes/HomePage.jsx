@@ -11,7 +11,8 @@ import toast, { Toaster } from 'react-hot-toast'
 import { MasonryPhotoAlbum} from 'react-photo-album'
 import 'react-photo-album/masonry.css'
 //import { images } from '../../utils/images'
-//import { images } from '../../utils/images'
+
+import { images } from '../../utils/images'
 
 
 export async function action({ request }) {
@@ -181,28 +182,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
-          <MasonryPhotoAlbum
-            photos={[
-              {
-                asset: '.gallery1.jpg',
-              },
-              {
-                asset: './gallery2.jpg',
-              },
-              {
-                asset: './gallery3.jpg',
-              },
-              {
-                asset: './gallery4.jpg',
-              },
-              {
-                asset: './gallery5.jpg',
-              },
-              {
-                asset: './gallery6.jpg',
-              },
-            ]}
-          />
+         
+          <MasonryPhotoAlbum photos={images} />
+        
 
           <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
             <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
