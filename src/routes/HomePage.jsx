@@ -10,11 +10,11 @@ import toast, { Toaster } from 'react-hot-toast'
 //import Mask from '../../components/Mask'
 import 'photoswipe/dist/photoswipe.css'
 
-import { Gallery, Item } from 'react-photoswipe-gallery'
+//import { Gallery, Item } from 'react-photoswipe-gallery'
 
 //import { images } from '../../utils/images'
 
-import { images } from '../../utils/images'
+//import { images } from '../../utils/images'
 
 
 export async function action({ request }) {
@@ -184,18 +184,75 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex w-full flex-col items-center p-10">
-          <Gallery>
-            {images.map((item) => (
-              <Item key={item} original={item.src} thumbnail={item.src}>
-                {({ ref, open }) => (
-                  <img ref={ref} onClick={open} src={item.src} />
-                )}
-              </Item>
-            ))}
-
-          
-          </Gallery>
-
+          <section className="bg-white py-20 dark:bg-dark">
+            <div className="container">
+              <div className="break-inside-avoid gap-8 md:columns-2 lg:columns-3">
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-1.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-4.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-7.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-2.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-5.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-8.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-3.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-6.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mb-8 overflow-hidden rounded-xl">
+                  <img
+                    src="../images/galleries/gallery-04/image-9.jpg"
+                    alt="gallery image"
+                    className="w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
           <div className="w-full flex-col items-center justify-center h-1/2 lg:h-full lg:w-1/2">
             <div className="card mx-auto rounded-none card-bordered border-white bg-primary bg-opacity-20 backdrop-blur-md w-full max-w-sm shrink-0 shadow-2xl">
               <fetcher.Form method="post" className="card-body">
