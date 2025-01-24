@@ -193,7 +193,7 @@ export default function HomePage() {
               <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px] dark:text-white">
                 Galerimiz
               </h2>
-              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+              <p className="mb-9 hidden lg:block text-base leading-relaxed text-body-color dark:text-dark-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 adiqua minim veniam quis nostrud exercitation ullamco
